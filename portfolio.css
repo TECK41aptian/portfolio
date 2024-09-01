@@ -1,0 +1,263 @@
+/* Simple Styling for Portfolio */
+*{
+  
+  box-sizing: border-box;
+  /*outline: 2px solid red;*/
+  
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffff7b;
+    margin: 0;
+    padding: 0;
+    
+  }
+  i{
+    padding: 0 10px;
+  }
+  .id-container{
+    display: flex;
+    width: 60px;
+    height: 60px;
+  }
+  .id-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+  
+  header {
+    background-color: #5182bd;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    padding: 5px 5px;
+    border-radius: 10px;
+  }
+  header a:hover{
+    background: #ffff7b;
+  }
+  
+
+  /*Hero Section Styles */
+
+.hero {
+  font-family: 'Arial', sans-serif;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00c2de;
+  color: #0c0a0a;
+  overflow: hidden;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+   
+    animation: blink 0.75s step-end infinite;
+    position: relative;
+}
+
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes resetPosition {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+  #about{
+    background: #d1d5d96b;
+  }
+  #about h2{
+    position: relative;
+    top: 0;
+  }
+  figure{
+    background: #007bff;
+    height: 0;
+  }
+  figure img{
+    display: flex;
+    width: auto;
+    height: 100px;
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    bottom: 10px;
+    right: 100px;
+  }
+  .autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+
+  }
+  @keyframes autoRotateAnimation{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+  .star{
+    text-align: right;
+    justify-content: right;
+    font-size: 5rem;
+    display: flex;
+    color: rgb(0, 0, 0, 0.3);
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px 0px;
+    background: #ffffff;
+
+    
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  section p, section h2, section h3, section a, section li{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+  }
+  @keyframes autoShowAnimation{
+    from{
+      opacity: 0;
+      transform: translateY(200px) scale(0.3);
+
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .project {
+    background-color:  none;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  .project a:hover{
+    border-bottom: 1px solid #007bff;
+  }
+  #skills{
+    background: #ffff7b47;
+  }
+  #skills ul li{
+    justify-content: left;
+    text-align: left;
+  }
+
+
+
+
+  #contact{
+    text-align: center;
+  }
+  .links a{
+    font-size: 2rem;
+    color: #333;
+  }
+  .links a:hover{
+    color:  #5182bd;
+  }
+  
+  footer {
+    background-color: #5182bd;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .social-links{
+    margin: 20px 0;
+    padding: 10px 20px;
+  }
+  .social-links a{
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+  }
+  .social-links a:hover{
+    color: #ffff7b;
+  }
+  .footer-bottom{
+    border-top: 1px dotted #333;
+    color: #333;
+  }
+  @media(max-width: 768px){
+    .id-container img{
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    header h1{
+      font-size: 1.9rem;
+      margin-top: 20px;
+    }
+    header p, header a{
+      font-size: 1.2rem;
+    }
+    .hero{
+      height: 30vh;
+    }
+    .hero h1{
+      font-size: 1.2rem;
+    }
+
+  }

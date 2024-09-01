@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+      <header>
+        <div class="id-container">
+          <img src="id-phpto.jpg" alt="ID Photo" srcset="ID Photo">
+        </div>
+        <h1>Ruteck Ditini</h1>
+        <p>Web Developer | Electrical Engineering - Electronics <i class="fa fa-certificate"></i></p>
+        <nav>
+          <ul>
+            <li><a href="#about"><i class="fa fa-info"></i>About Me</a></li>
+            <li><a href="#projects"><i class="fa fa-code-fork"></i> Projects</a></li>
+            <li><a href="#skills"><i class="fa fa-graduation-cap"></i> Skills</a></li>
+            <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+          </ul>
+        </nav>
+        
+      </header>
+      <section class="hero">
+        <div class="hero-content">
+            <h1 id="typewriter"></h1>
+        </div>
+    </section>
+            
+      <section id="about">
+        <figure>
+          <img src="laptop.png" alt="About Pictures" srcset="About Pictures" class="autoRotate">
+        </figure>
+        <h2><i class="fa fa-info"></i>About Me</h2>
+        <p>Hi! I'm Ruteck Ditini, a web developer and electronics engineer passionate about technology and innovation. Currently pursuing a Diploma in Electrical Engineering - Electronics at Port Moresby Technical College. I have experience in web development, including front-end and back-end technologies, and have worked on several personal and client projects.</p>
+      </section>
+      <section id="projects">
+        <h2><i class="fa fa-code-fork"></i>My Projects</h2>
+        <div class="project">
+          <h3>Hausman Barbershop Website</h3>
+          <p>Developed the front-end for Hausman Barbershop using HTML, CSS, and JavaScript. Currently working on the back-end to implement features like appointment booking.</p>
+          <a href="https://github.com/YourUsername/hausman-barbershop" target="_blank">View on GitHub</a>
+        </div>
+      
+        <div class="project">
+          <h3>E-commerce Site (In Progress)</h3>
+          <p>Working on an e-commerce platform that includes a responsive design, product catalog, and payment gateway integration.</p>
+          <a href="https://github.com/YourUsername/ecommerce-site" target="_blank">View on GitHub</a>
+        </div>
+      
+        <!--<div class="project">
+          <h3>Personal Blog (In Progress)</h3>
+          <p>Building a personal blog with a focus on clean design, accessibility, and performance.</p>
+          <a href="https://github.com/YourUsername/personal-blog" target="_blank">View on GitHub</a>
+        </div>-->
+      </section>
+      <section id="skills">
+        <h2><i class="fa fa-graduation-cap"></i>Skills</h2>
+
+           <div class="rotate">
+            <figure>
+              <img src="laptop.png" alt="About Pictures" srcset="About Pictures" class="autoRotate">
+            </figure>
+          </div>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Front-end Frameworks: Bootstrap</li>
+            <li>Back-end: Node.js, Firebase</li>
+            <li>Version Control: Git, GitHub</li>
+            <li>Electronics: Circuit Design, Troubleshooting</li>
+            <li>Responsive Web Design</li>
+              <div class="star">
+              <span class="autoRotate">&#10037;</span>
+            </div>
+        </ul>
+        
+      </section>
+      
+      <section id="contact">
+        <h2><i class="fa fa-comment"></i>Contact Me</h2>
+        <p>If you had like to work with me or learn more about my projects, feel free to reach out!</p>
+        <div class="links">
+          <a href="mailto:ruteckditini41@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/Diti41"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ruteck-ditini-465378310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+          <a href="tel:+67579807718"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      </section>
+      <footer>
+        <div class="social-links">
+          <p><h3>Follow me on: </h3></p>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Aptian. All rights reserved.</p>
+        </div>
+      </footer>         
+    <script src="portfolio.js"></script>
+  </body>
+</html>
+
